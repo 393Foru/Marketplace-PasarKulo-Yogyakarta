@@ -1,7 +1,7 @@
     // Inisialisasi untuk slider "Pilihan Pasar"
     var pasarSwiper = new Swiper("#PasarPilihanSwiper", {
         slidesPerView: 1,
-        spaceBetween: 20, // Anda bisa sesuaikan jarak untuk slider ini
+        spaceBetween: 10, // Anda bisa sesuaikan jarak untuk slider ini
         loop: true,
         navigation: {
             nextEl: "#PasarPilihanSwiper .swiper-button-next",

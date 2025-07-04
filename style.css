@@ -1,0 +1,102 @@
+
+/* ================== */
+/* KOLEKSI CSS CARD */
+/* ================== */
+
+/* Card Pasar */
+.card-pasar {
+    max-width: 400px;
+    box-shadow: 3px 3px 6px rgba(30, 56, 41, 0.1);
+}
+
+.card-pasar-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.card-logo-pasar {
+    max-width: 45px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* Card Toko */
+.card-toko {
+    max-width: 295px;
+    width: 295px;
+    height: 400px;
+    box-shadow: 3px 3px 6px rgba(30, 56, 41, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-toko-img-top {
+    width: 100%;
+    height: 244px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.card-logo-toko {
+    max-width: 38px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.card-promo-toko {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    width: auto;
+    align-items: flex-start;
+}
+
+.card-title-toko {
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-text-kategori-toko {
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.point-sale{
+    background-color: #1E3829 !important;
+    border-radius: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #fff !important;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 8px rgba(30, 56, 41, 0.08);
+    color: #1E3829 !important;
+    top: 45%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 18px;
+    color: #1E3829 !important;
+}
+
+.swiper-pagination-bullet {
+    background: #1E3829 !important;
+    opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+    background: #1E3829 !important;
+    opacity: 1;
+}

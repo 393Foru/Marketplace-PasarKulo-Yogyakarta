@@ -1,11 +1,11 @@
     // Inisialisasi untuk slider "Pilihan Pasar"
-    var pasarSwiper = new Swiper(".mySwiper:not(#tokoPilihanSwiper)", {
+    var pasarSwiper = new Swiper("#PasarPilihanSwiper", {
         slidesPerView: 1,
         spaceBetween: 20, // Anda bisa sesuaikan jarak untuk slider ini
         loop: true,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: "#PasarPilihanSwiper .swiper-button-next",
+            prevEl: "#PasarPilihanSwiper .swiper-button-prev",
         },
         pagination: {
             el: ".swiper-pagination",
@@ -39,7 +39,7 @@
                 slidesPerView: 2,
             },
             992: {
-                slidesPerView: 4, // Menggunakan auto untuk menyesuaikan dengan ukuran konten
+                slidesPerView: 4, // Menampilkan 4 slide pada layar lebar
             }
         }
     });

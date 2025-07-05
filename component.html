@@ -13,6 +13,10 @@
 
 <body>
 
+    <!-- ===================== -->
+    <!-- komponen untuk navbar -->
+    <!-- ===================== -->
+
     <!-- komponen untuk navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -40,131 +44,359 @@
         </div>
     </nav>
 
-    <!-- komponen untuk Card Pasar-->
-    <div class="swiper-slide">
-        <div class="card w-100" style="max-width: 400px; box-shadow: 3px 3px 6px rgba(30, 56, 41, 0.1);">
-            <img src="asset/banner/pasar.png" class="card-img-top" alt="Pasar PasarKulo"
-                style="width: 100%; height: auto; object-fit: cover; margin: 0 auto; display: block;">
-            <div class="card-body d-flex align-items-center">
-                <div class="me-3">
-                    <img src="asset/banner/pasar.png" alt="Logo" class="img-fluid rounded-circle"
-                        style="max-width: 45px; aspect-ratio: 1/1; object-fit: cover;">
-                </div>
-                <div>
-                    <h4 class="card-title m-0" style="font-size: 20px; font-weight: 600;">Nama Pasar</h4>
-                    <p class="card-text">Nama Toko</p>
-                </div>
+    <!-- ======================= -->
+    <!-- komponen untuk carousel -->
+    <!-- ======================= -->
+
+
+    <!-- ============================= -->
+    <!-- komponen untuk container text -->
+    <!-- ============================= -->
+
+    <!-- container text -->
+    <div class="w-75 text-center">
+        <h2>Apasih PasarKulo itu ?</h2>
+        <p>PasarKulo Yogyakarta adalah platform digital yang menghubungkan pasar tradisional Jogja dengan pembeli
+            secara
+            online. Melalui aplikasi ini, masyarakat bisa belanja sayur, jajanan, batik, dan produk khas Jogja
+            langsung
+            dari pedagang pasar — kapan saja dan di mana saja — tanpa kehilangan kehangatan dan nuansa lokalnya.</p>
+    </div>
+
+    <!-- ========================= -->
+    <!-- komponen untuk point sale -->
+    <!-- ========================= -->
+
+    <!-- point sale -->
+    <div class="point-sale w-auto px-5 py-3 rounded-4">
+        <div class="row justify-content-center g-5">
+            <div class="col-auto text-white text-center">
+                <p class="m-0 fw-lighter judul-sub-pasar text-white">Telah didownload</p>
+                <h1 class="m-0 fw-bold">1500+</h1>
+                <p class="m-0 fw-normal">Pengguna PasarKulo</p>
+            </div>
+            <div class="col-auto text-white text-center">
+                <p class="m-0 fw-lighter judul-sub-pasar text-white">Telah membantu</p>
+                <h1 class="m-0 fw-bold">500+</h1>
+                <p class="m-0 fw-normal">Mitra Toko</p>
+            </div>
+            <div class="col-auto text-center">
+                <p class="m-0 fw-lighter judul-sub-pasar text-white">Bekerjasama dengan</p>
+                <h1 class="m-0 fw-bold">50+</h1>
+                <p class="m-0 fw-normal">Pasar Tradisional</p>
             </div>
         </div>
     </div>
 
-    <!-- komponen untuk card toko -->
-    <div class="swiper-slide">
-        <div class="card w-100"
-            style="max-width: 295px; width: 295px; height: 400px; box-shadow: 3px 3px 6px rgba(30, 56, 41, 0.1); display: flex; flex-direction: column;">
-            <img src="asset/banner/pasar.png" class="card-img-top" alt="Pasar PasarKulo"
-                style="width: 100%; height: 244px; object-fit: cover; margin: 0 auto; display: block;">
-            <div class="card-body d-flex flex-column flex-grow-1 w-100 pb-1">
-                <div class="d-flex flex-row flex-wrap gap-1" style="width: auto; align-items: flex-start;">
-                    <span class="badge bg-light text-dark">Gratis Ongkir</span>
-                    <span class="badge bg-light text-dark">Diskon 10%</span>
-                </div>
-                <div class="d-flex align-items-center flex-grow-1 w-100" style="min-height: 0;">
-                    <div class="me-2 flex-shrink-0">
-                        <img src="asset/banner/pasar.png" alt="Logo" class="img-fluid rounded-circle"
-                            style="max-width: 38px; aspect-ratio: 1/1; object-fit: cover;">
-                    </div>
-                    <div class="text-start w-100">
-                        <h4 class="card-title m-0"
-                            style="font-size: 18px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                            Nama Toko</h4>
-                        <div class="d-flex align-items-center gap-1 flex-wrap">
-                            <p class="card-text mb-0" style="font-size: 13px; flex-shrink: 0;">Kategori</p>
-                            <div class="d-flex gap-1 flex-wrap flex-fill">
-                                <span class="text-warning" style="font-size: 14px;">
-                                    &#9733; &#9733; &#9733; &#9733; &#9734;
-                                </span>
-                                <span class="text-muted" style="font-size: 12px;">(4.0)</span>
+    <!-- ======================== -->
+    <!-- komponen untuk Card Pasar-->
+    <!-- ======================== -->
+
+    <!-- pilihan pasar -->
+    <div class="w-100">
+        <div class="py-2 d-flex justify-content-between align-items-center">
+            <h2 class="mb-0 fs-5">Pilihan Pasar Yogyakarta</h2>
+            <a href="#" class="btn btn-link btn-selanjutnya">Lihat Semua</a>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper w-100" id="PasarPilihanSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="card-pasar card rounded-4 w-100">
+                        <img src="asset/banner/pasar.png" class="card-img-top img-top rounded-top-4"
+                            alt="Pasar PasarKulo">
+                        <div class="card-body d-flex align-items-center">
+                            <div class="me-3 flex-shrink-0">
+
+                                <img src="asset/banner/pasar.png" alt="Logo"
+                                    class="img-fluid rounded-circle logo-pasar">
+                            </div>
+                            <div class="text-start">
+                                <h4 class="card-title mb-0 judul-pasar w-75">Nama Pasar asfasfa asfafa fsafsas</h4>
+                                <p class="card-text mb-0 judul-sub-pasar opacity-75 text-muted">Nama Daerah</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="w-100">
-                    <div class="text-start small text-muted" style="font-size: 10px;">Nama Pasar</div>
-                    <hr class="my-0" style="border-top: 2px solid #cacaca;">
-                    <div class="text-start small text-muted"
-                        style="font-size: 10px; font-weight: 400; letter-spacing: 0.2px; opacity: 0.7;">Nama
-                        Kota</div>
-                </div>
+                <!-- Slide 2 -->
             </div>
+            <!-- Swiper navigation buttons -->
+            <div class="swiper-button-next btn btn-white opacity-75"></div>
+            <div class="swiper-button-prev btn btn-white opacity-75"></div>
+            <!-- Swiper pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
         </div>
     </div>
 
+    <!-- ============================ -->
+    <!-- komponen untuk Card Kategori -->
+    <!-- ============================ -->
 
-    <!-- komponen untuk slider Pilihan Pasar -->
-    <div class="container my-5 w-100 text-center">
-        <div class="d-flex justify-content-between align-items-center py-4">
-            <p class="mb-0 fw-bold fs-5">Toko Pilihan</p>
-            <a href="#" class="btn btn-link">Lihat Semua</a>
+    <!-- Kategori pilihan -->
+    <div class="container-kategori card w-100 rounded-4 shadow p-3 bg-white">
+        <div class="py-2 d-flex justify-content-between align-items-center">
+            <h2 class="mb-0 fs-5">Kategori Pilihan</h2>
+            <a href="#" class="btn btn-link btn-selanjutnya">Lihat Semua</a>
+        </div>
+        <div class="d-flex flex-row w-100 flex-nowrap gap-1 justify-content-start overflow-auto py-1">
+            <!-- slide 1 -->
+            <div class="card card-kategori rounded-4">
+                <div class="judul-produk text-start px-3 mb-0">Nama Kategori asfasf fasdfaw</div>
+                <img src="asset/banner/pasar.png" class="img-bottom rounded-bottom-4 w-100" alt="Pasar PasarKulo">
+            </div>
+            <!-- slide 2 -->
+            <div class="card card-kategori rounded-4">
+                <div class="judul-produk text-start px-3 mb-0">Nama Kategori asfasf fasdfaw</div>
+                <img src="asset/banner/pasar.png" class="img-bottom rounded-bottom-4 w-100" alt="Pasar PasarKulo">
+            </div>
+            <!-- slide 3 -->
+            <div class="card card-kategori rounded-4">
+                <div class="judul-produk text-start px-3 mb-0">Nama Kategori asfasf fasdfaw</div>
+                <img src="asset/banner/pasar.png" class="img-bottom rounded-bottom-4 w-100" alt="Pasar PasarKulo">
+            </div>
+            <!-- slide 4 -->
+            <div class="card card-kategori rounded-4">
+                <div class="judul-produk text-start px-3 mb-0">Nama Kategori asfasf fasdfaw</div>
+                <img src="asset/banner/pasar.png" class="img-bottom rounded-bottom-4 w-100" alt="Pasar PasarKulo">
+            </div>
+            <!-- slide 5 -->
+            <div class="card card-kategori rounded-4">
+                <div class="judul-produk text-start px-3 mb-0">Nama Kategori asfasf fasdfaw</div>
+                <img src="asset/banner/pasar.png" class="img-bottom rounded-bottom-4 w-100" alt="Pasar PasarKulo">
+            </div>
+            <!-- slide 6 -->
+            <div class="card card-kategori rounded-4">
+                <div class="judul-produk text-start px-3 mb-0">Nama Kategori asfasf fasdfaw</div>
+                <img src="asset/banner/pasar.png" class="img-bottom rounded-bottom-4 w-100" alt="Pasar PasarKulo">
+            </div>
+            <!-- slide 7 -->
+            <div class="card card-kategori rounded-4">
+                <div class="judul-produk text-start px-3 mb-0">Nama Kategori asfasf fasdfaw</div>
+                <img src="asset/banner/pasar.png" class="img-bottom rounded-bottom-4 w-100" alt="Pasar PasarKulo">
+            </div>
+            <!-- slide 8 -->
+            <div class="card card-kategori rounded-4">
+                <div class="judul-produk text-start px-3 mb-0">Nama Kategori asfasf fasdfaw</div>
+                <img src="asset/banner/pasar.png" class="img-bottom rounded-bottom-4 w-100" alt="Pasar PasarKulo">
+            </div>
+            <!-- slide 9 -->
+            <div class="card card-kategori rounded-4">
+                <div class="judul-produk text-start px-3 mb-0">Nama Kategori asfasf fasdfaw</div>
+                <img src="asset/banner/pasar.png" class="img-bottom rounded-bottom-4 w-100" alt="Pasar PasarKulo">
+            </div>
+            <!-- slide 10 -->
+            <div class="card card-kategori rounded-4">
+                <div class="judul-produk text-start px-3 mb-0">Nama Kategori asfasf fasdfaw</div>
+                <img src="asset/banner/pasar.png" class="img-bottom rounded-bottom-4 w-100" alt="Pasar PasarKulo">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ======================== -->
+    <!-- komponen untuk Card Toko -->
+    <!-- ======================== -->
+
+    <!-- toko pilihan -->
+    <div class="w-100">
+        <div class="py-2 d-flex justify-content-between align-items-center">
+            <h2 class="mb-0 fs-5">Toko Pilihan</h2>
+            <a href="#" class="btn btn-link btn-selanjutnya">Lihat Semua</a>
         </div>
         <!-- Swiper -->
         <div class="swiper mySwiper" id="tokoPilihanSwiper">
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
-                    <div class="card w-100"
-                        style="max-width: 295px; width: 295px; height: 400px; box-shadow: 3px 3px 6px rgba(30, 56, 41, 0.1); display: flex; flex-direction: column;">
-                        <img src="asset/banner/pasar.png" class="card-img-top" alt="Pasar PasarKulo"
-                            style="width: 100%; height: 244px; object-fit: cover; margin: 0 auto; display: block;">
-                        <div class="card-body d-flex flex-column flex-grow-1 w-100 pb-1">
-                            <div class="d-flex flex-row flex-wrap gap-1" style="width: auto; align-items: flex-start;">
-                                <span class="badge bg-light text-dark">Gratis Ongkir</span>
-                                <span class="badge bg-light text-dark">Diskon 10%</span>
+                    <div class="card-toko card rounded-4 w-100">
+                        <img src="asset/banner/pasar.png" class="card-img-top img-top rounded-top-4"
+                            alt="Pasar PasarKulo">
+                        <div class="card-body d-flex flex-column flex-grow-1 w-100">
+                            <div class="promo">
+                                <span class="badge opacity-75">Gratis Ongkir</span>
+                                <span class="badge opacity-75">Diskon 10%</span>
                             </div>
-                            <div class="d-flex align-items-center flex-grow-1 w-100" style="min-height: 0;">
+                            <div class="d-flex align-items-center flex-grow-1 w-100">
                                 <div class="me-2 flex-shrink-0">
-                                    <img src="asset/banner/pasar.png" alt="Logo" class="img-fluid rounded-circle"
-                                        style="max-width: 38px; aspect-ratio: 1/1; object-fit: cover;">
+                                    <img src="asset/banner/pasar.png" alt="Logo"
+                                        class="logo-toko img-fluid rounded-circle">
                                 </div>
-                                <div class="text-start w-100">
-                                    <h4 class="card-title m-0"
-                                        style="font-size: 18px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                                        Nama Toko</h4>
-                                    <div class="d-flex align-items-center gap-1 flex-wrap">
-                                        <p class="card-text mb-0" style="font-size: 13px; flex-shrink: 0;">Kategori</p>
+                                <div class="w-100">
+                                    <h4 class="card-title mb-0 judul-toko w-75">Nama Toksafdasfa dfsasadaso</h4>
+                                    <div class="teks-kategori d-flex align-items-center gap-1 flex-wrap flex-shrink-0">
+                                        <p class="mb-0">Kategori</p>
                                         <div class="d-flex gap-1 flex-wrap flex-fill">
-                                            <span class="text-warning" style="font-size: 14px;">
+                                            <span class="text-warning">
                                                 &#9733; &#9733; &#9733; &#9733; &#9734;
                                             </span>
-                                            <span class="text-muted" style="font-size: 12px;">(4.0)</span>
+                                            <span class="text-muted">(4.0)</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-100">
-                                <div class="text-start small text-muted" style="font-size: 10px;">Nama Pasar</div>
+                            <div class="flex-column text-start small text-muted d-flex w-100">
+                                <span class="teks-footer-card">Nama Pasar</span>
                                 <hr class="my-0" style="border-top: 2px solid #cacaca;">
-                                <div class="text-start small text-muted"
-                                    style="font-size: 10px; font-weight: 400; letter-spacing: 0.2px; opacity: 0.7;">Nama
-                                    Kota</div>
+                                <span class="teks-footer-card text-muted opacity-50">Nama Kota</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Tambahkan slide lain di sini (copy block di atas) -->
-
 
             </div>
 
             <!-- Swiper navigation buttons -->
-            <div class="swiper-button-next btn btn-white"></div>
-            <div class="swiper-button-prev btn btn-white"></div>
+            <div class="swiper-button-next btn btn-white opacity-75"></div>
+            <div class="swiper-button-prev btn btn-white opacity-75"></div>
             <!-- Swiper pagination -->
             <!-- <div class="swiper-pagination"></div> -->
         </div>
     </div>
 
-    <!-- komponen untuk  -->
+    <!-- ========================== -->
+    <!-- komponen untuk Card Produk -->
+    <!-- ========================== -->
+
+    <!-- produk pilihan -->
+    <div class="w-100">
+        <div class="py-2 d-flex justify-content-between align-items-center">
+            <h2 class="mb-0 fs-5">Best Seller</h2>
+            <a href="#" class="btn btn-link btn-selanjutnya">Lihat Semua</a>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper" id="ProdukSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="card-produk card rounded-4 w-100">
+                        <img src="asset/banner/pasar.png" class="card-produk-img-top card-img-top rounded-top-4"
+                            alt="Pasar PasarKulo">
+                        <div class="card-body d-flex flex-column flex-grow-1 w-100">
+                            <div class="promo">
+                                <span class="badge opacity-75">Gratis Ongkir</span>
+                                <span class="badge opacity-75">Diskon 10%</span>
+                            </div>
+                            <div class="judul-produk text-start mb-0">
+                                Nama Produk / Jasa fasfasd sadfasd sadas dfwesdf dafbfsdgds
+                            </div>
+                            <div class="d-flex align-items-center flex-grow-1 w-100">
+                                <div class="text-start w-100">
+                                    <div class="gap-2">
+                                        <p class="harga fw-bold card-title m-1">Rp20.000</p>
+                                        <div class="teks-kategori gap-1 flex-wrap">
+                                            <div class="d-flex align-items-center mb-2 gap-1 flex-wrap">
+                                                <span class=" fw-bold badge discount-badge">50%</span>
+                                                <span
+                                                    class="text-muted text-decoration-line-through mb-0">Rp40.000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="teks-kategori d-flex align-items-center gap-1 flex-wrap">
+                                        <div class="gap-0">
+                                            <span class="text-warning"> &#9733;</span>
+                                            <span class="text-muted">(4.0)</span>
+                                            <span>|</span>
+                                            <span>(Xrb Terjual)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-card flex-column text-start small text-muted d-flex w-100">
+                                <span class="teks-footer-card">Nama Pasar</span>
+                                <hr class="my-0" style="border-top: 2px solid #cacaca;">
+                                <span class="teks-footer-card text-muted opacity-50">Nama Kota</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Swiper navigation buttons -->
+            <div class="swiper-button-next btn btn-white opacity-75"></div>
+            <div class="swiper-button-prev btn btn-white opacity-75"></div>
+            <!-- Swiper pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+
+    <!-- ========================== -->
+    <!-- komponen untuk Card Produk -->
+    <!-- ========================== -->
+
+
+
+    <!-- ================================ -->
+    <!-- komponen untuk CTA Daftar Tenant -->
+    <!-- ================================ -->
+
+    <!-- CTA daftar tenant -->
+    <div class="point-sale w-auto px-5 rounded-5">
+        <div class="row justify-content-center align-items-center g-5">
+            <div class="col-auto text-white text-start">
+                <p class="m-0">Ingin Toko Anda Tampil di Sini?</p>
+                <p class="m-0"> Daftar Sekarang dan Bergabung dengan Pasarkulo!</p>
+            </div>
+            <div class="col-auto text-white text-center">
+                <a href="#" class="btn btn-light px-3 py-2 fw-bold rounded-5">Gabung Sekarang</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= -->
+    <!-- komponen untuk footer -->
+    <!-- ========================= -->
+
+    <!-- footer -->
+    <footer class="container-fluid bg-dark text-white py-4">
+        <div class="container w-100 py-4 px-4 gy-4">
+            <div class="row w-100 gy-4">
+                <div class="col-md-2 px-5 d-flex flex-column">
+                    <img src="asset/Logo PasarKulo/logo type 2.png" alt="logo" class="logo-footer mb-3">
+                    <div class="d-flex gap-2 justify-content-center">
+                        <a href="#" class="text-white text-decoration-none"><img
+                                src="asset/button img/twitter - white.png" alt="twitter"></a>
+                        <a href="#" class="text-white text-decoration-none"><img
+                                src="asset/button img/instagram - white.png" alt="instagram"></a>
+                        <a href="#" class="text-white text-decoration-none"><img
+                                src="asset/button img/facebook - white.png" alt="facebook"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 px-5 d-flex flex-column gap-3">
+                    <h5 class="fs-6">PasarKulo Yogyakarta</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                        <li><a href="#" class="text-white text-decoration-none small fw-light">Pasar & Toko</a></li>
+                        <li><a href="#" class="text-white text-decoration-none small fw-light">PasarKulo News</a></li>
+                        <li><a href="#" class="text-white text-decoration-none small fw-light">PasarKulo Event</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 px-5 d-flex flex-column gap-3">
+                    <h5 class="fs-6">Lainnya</h5>
+                    <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                        <li><a href="#" class="text-white text-decoration-none small fw-light">PT PASARKULO
+                                YOGYAKARTA</a></li>
+                        <li><a href="#" class="text-white text-decoration-none small fw-light">Bantuan</a></li>
+                        <li><a href="#" class="text-white text-decoration-none small fw-light">Kontak Kami</a></li>
+                        <li><a href="#" class="text-white text-decoration-none small fw-light">Syarat & Ketentuan</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 d-flex flex-column gap-2">
+                    <h5 class="fs-6">Unduh Aplikasi</h5>
+                    <a href="#" class="d-block w-100"><img src="asset/button img/button - google play.png"
+                            alt="Get it on Google Play" style="width: 150px; height: auto;"></a>
+                    <a href="#" class="d-block w-100"><img src="asset/button img/button - app store.png"
+                            alt="Download on the App Store" style="width: 150px; height: auto;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-2 mt-2 border-top opacity-50">
+            <p class="mb-0 small">&copy; 2025 PasarKulo Yogyakarta. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- komponen untuk pemanggilan js & bootstrap -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

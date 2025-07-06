@@ -16,32 +16,41 @@
 
 <body>
     <!-- navbar -->
-    <nav id="navbar-utama" class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow-sm">
         <div class="container-fluid">
-            <a href="#" class="navbar-brand px-4"><img class="logo-navbar" src="asset/Logo PasarKulo/logo type.png"
+            <a href="index.html" class="navbar-brand px-4"><img class="logo-navbar" src="asset/Logo PasarKulo/logo type.png"
                     alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
+            < class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="marketplace.html">Marketplace</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Lainnya
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="page-berita-&-event.html">Berita & Event</a></li>
+                            <li><a class="dropdown-item" href="Lainnya.html">Bantuan</a></li>
+                            <li><a class="dropdown-item" href="Lainnya.html">Tentang Kami</a></li>
+                            <li><a class="dropdown-item" href="Lainnya.html">Syarat & Ketentuan</a></li>
+                        </ul>
                     </li>
+                    
                 </ul>
                 <span class="navbar-text px-4">Dari Jogja untuk Nusantara</span>
                 <span>|</span>
-                <div class="px-4 d-flex align-items-center gap-2">
-                    <a href="#" class="btn btn-light btn-normal px-3 py-2 rounded-5 border">Login</a>
-                    <a href="#" class="btn btn-success btn-ijo px-3 py-2 rounded-5">Daftar</a>
-                </div>
+                <ul class="px-4 d-flex align-items-center gap-2">
+                    <a href="login.html" class="btn btn-light btn-normal px-3 py-2 rounded-5 border">Login</a>
+                    <a href="register.html" class="btn btn-success btn-ijo px-3 py-2 rounded-5">Daftar</a>
+                </ul>
             </div>
         </div>
     </nav>
@@ -139,14 +148,13 @@
 
         <!-- navbar 2 -->
 
-        <nav id="navbar-pendukung"
-            class="navbar navbar-expand-lg border-2 border-bottom py-2 w-100">
+        <nav id="navbar-pendukung" class="navbar navbar-expand-lg border-2 border-bottom py-2 w-100">
             <a href="marketplace.html" class="btn btn-link btn-selanjutnya active">HOME</a>
             <a href="page-pasar.html" class="btn btn-link btn-selanjutnya">Pasar</a>
-            <a href="#" class="btn btn-link btn-selanjutnya">Toko</a>
+            <a href="page-toko.html" class="btn btn-link btn-selanjutnya">Toko</a>
             <a href="page-kategori.html" class="btn btn-link btn-selanjutnya">Kategori</a>
             <a href="page-produk.html" class="btn btn-link btn-selanjutnya">Produk</a>
-            <a href="page-berita-&-event.html" class="btn btn-link btn-selanjutnya">Berita & Event</a>
+            <a href="#" class="btn btn-link btn-selanjutnya">Berita & Event</a>
         </nav>
 
         <!-- Promo & Event - 2 konten -->
@@ -188,7 +196,7 @@
         <!-- pilihan pasar -->
         <div class="w-100 mb-5">
             <div class="py-2 my-5 d-flex justify-content-center border-bottom border-1">
-                <h2 class="mb-0 fs-5">Pilihan Toko di Pasar Yogyakarta</h2>
+                <h2 class="mb-0 fs-5">Pilihan Kategori Produk di Yogyakarta</h2>
             </div>
             <!-- Grid Layout -->
             <div class="row g-3">

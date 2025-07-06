@@ -1,4 +1,18 @@
 /* ================== */
+/* Koleksi Kontainer */
+/* ================== */
+
+.container-event-promo-1 {
+    width: 100%;
+    height: 300px;
+}
+
+.container-event-promo-2 {
+    width: 100%;
+    height: 600px;
+}
+
+/* ================== */
 /* NAVBAR */
 /* ================== */
 
@@ -16,25 +30,29 @@
 
 .search-bar .input-group {
     border-radius: 30px;
-        border: 0.5px solid rgb(204, 204, 204, 0.5);
+    border: 0.5px solid rgb(204, 204, 204, 0.5);
 
     overflow: hidden;
 }
 
 .search-bar .form-control {
-    font-size: 10px; /* Ukuran font diubah menjadi 10px */
+    font-size: 10px;
+    /* Ukuran font diubah menjadi 10px */
     border: none;
-    padding: 5px 15px; /* Padding disesuaikan agar proporsional */
+    padding: 5px 15px;
+    /* Padding disesuaikan agar proporsional */
 }
 
 .search-bar .form-control::placeholder {
-    font-size: 10px; /* Ukuran font placeholder disamakan */
+    font-size: 10px;
+    /* Ukuran font placeholder disamakan */
     color: #999;
 }
 
 .search-bar .btn {
     border: none;
-    padding: 5px 12px; /* Padding tombol disesuaikan agar tingginya sama */
+    padding: 5px 12px;
+    /* Padding tombol disesuaikan agar tingginya sama */
 }
 
 .search-bar .btn i {
@@ -97,6 +115,16 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.number-discount {
+    font-size: 60px;
+    color: #1E3829;
+}
+
+.percent-discount {
+    font-size: 30px;
+    color: #1E3829;
 }
 
 /* ===================== */
@@ -188,7 +216,7 @@
 }
 
 .card-kategori {
-width: 100%;
+    width: 100%;
 }
 
 .card-kategori .img-bottom {
@@ -218,6 +246,12 @@ width: 100%;
     max-width: 45px;
     aspect-ratio: 1/1;
     object-fit: cover;
+}
+
+/* card event & Promo */
+
+.card-event-promo {
+    height: auto;
 }
 
 /* ================= */
@@ -268,7 +302,7 @@ width: 100%;
     width: 100%;
 }
 
-.banner-utama-1 img{
+.banner-utama-1 img {
     height: 600px;
     width: 100%;
     object-fit: cover;
@@ -280,10 +314,10 @@ width: 100%;
     width: 100%;
 }
 
-.banner-utama-2 img{
+.banner-utama-2 img {
     height: 400px;
     width: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     margin: 0 auto;
     display: block;
 }

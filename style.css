@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'bungasai';
+    src: url('asset/font/Bungasai.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
 /* ================== */
 /* Koleksi Kontainer */
 /* ================== */
@@ -68,6 +79,10 @@
 /* ================ */
 /* KOLEKSI CSS TEKS */
 /* ================ */
+
+.judul-bungasai {
+    font-family: 'bungasai';
+}
 
 .judul-pasar {
     font-size: 18px;
@@ -262,11 +277,16 @@
 /* card event & Promo */
 
 .card-event-promo {
-    position: relative; /* Diperlukan untuk overlay */
-    background-size: cover; /* Membuat gambar mengisi div */
-    background-position: center; /* Memposisikan gambar di tengah */
-    color: #fff; /* Mengubah warna teks default menjadi putih */
-    overflow: hidden; /* Memastikan overlay tidak keluar dari border-radius */
+    position: relative;
+    /* Diperlukan untuk overlay */
+    background-size: cover;
+    /* Membuat gambar mengisi div */
+    background-position: center;
+    /* Memposisikan gambar di tengah */
+    color: #fff;
+    /* Mengubah warna teks default menjadi putih */
+    overflow: hidden;
+    /* Memastikan overlay tidak keluar dari border-radius */
 }
 
 /* Membuat overlay gelap semi-transparan */
@@ -277,12 +297,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(30, 56, 41, 0.6); /* Warna hijau tua dengan 60% opacity */
+    background-color: rgba(30, 56, 41, 0.3);
+    /* Warna hijau tua dengan 60% opacity */
     z-index: 0;
 }
 
 /* Memastikan konten teks berada di atas overlay */
-.card-event-promo > div {
+.card-event-promo>div {
     position: relative;
     z-index: 1;
 }
@@ -341,6 +362,22 @@
     object-fit: cover;
     margin: 0 auto;
     display: block;
+}
+
+.banner-utama-1 .carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(30, 56, 41, 0.25);
+    /* Lapisan hijau tua dengan opasitas 50% */
+    z-index: 1;
+}
+
+.banner-utama-1 .carousel-caption {
+    z-index: 2;
 }
 
 .banner-utama-2 {

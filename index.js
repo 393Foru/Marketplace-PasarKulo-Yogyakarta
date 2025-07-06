@@ -2,10 +2,10 @@
 // KOLEKSI JS NAVBAR
 // ============================
 
-// Pastikan semua elemen HTML sudah dimuat
+// Navbar tumpuk 2
 document.addEventListener('DOMContentLoaded', function () {
     // Ambil elemen navbar pertama dan kedua
-    const navbarUtama = document.getElementById('navbar-utama');
+    const navbarUtama = document.getElementById('navbar-pertama');
     const navbarKedua = document.getElementById('navbar-kedua');
 
     // Pastikan kedua elemen ada
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Ambil tinggi sebenarnya dari navbar pertama
         const tinggiNavbarUtama = navbarUtama.offsetHeight;
 
-        // Atur properti CSS 'top' untuk navbar kedua
+        // Atur properti CSS 'top' untuknavbar kedua
         navbarKedua.style.top = tinggiNavbarUtama + 'px';
     }
 });
@@ -36,8 +36,11 @@ var pasarSwiper = new Swiper("#PasarPilihanSwiper", {
         clickable: true,
     },
     breakpoints: {
-        768: {
+        576: {
             slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
         },
         992: {
             slidesPerView: 3,
@@ -55,11 +58,14 @@ var tokoSwiper = new Swiper("#tokoPilihanSwiper", {
         nextEl: "#tokoPilihanSwiper .swiper-button-next", // Target navigasi spesifik
         prevEl: "#tokoPilihanSwiper .swiper-button-prev", // Target navigasi spesifik
     },
-    pagination: {
-        el: "#tokoPilihanSwiper .swiper-pagination", // Target paginasi spesifik
-        clickable: true,
-    },
+    // pagination: {
+    //     el: "#tokoPilihanSwiper .swiper-pagination", // Target paginasi spesifik
+    //     clickable: true,
+    // },
     breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
         768: {
             slidesPerView: 2,
         },
@@ -71,7 +77,7 @@ var tokoSwiper = new Swiper("#tokoPilihanSwiper", {
 
 // Inisialisasi untuk slider "Produk Pilihan"
 var produkSwiper = new Swiper("#ProdukSwiper", {
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 10, // Anda bisa sesuaikan jarak untuk slider ini
     loop: true,
     navigation: {
@@ -83,6 +89,9 @@ var produkSwiper = new Swiper("#ProdukSwiper", {
         clickable: true,
     },
     breakpoints: {
+        576: {
+            slidesPerView: 3,
+        },
         768: {
             slidesPerView: 3,
         },

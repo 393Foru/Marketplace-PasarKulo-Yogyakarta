@@ -308,6 +308,60 @@ body {
     z-index: 1;
 }
 
+/* card detail */
+
+/* Card for Pasar Beranda Page */
+.card-detail {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(30, 56, 41, 0.1);
+}
+
+.card-detail .img-top {
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    background-color: #f8f9fa;
+}
+
+.card-detail .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1E3829;
+}
+
+.card-detail .address,
+.card-detail .contact a,
+.card-detail .social-links a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+/* card hover */
+
+.card-hover {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+    border: 1px solid #1E3829 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-hover-line {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+
+.card-hover-line:hover {
+    border: 1px solid #1E3829 !important;
+    transform: translateY(-1px);
+}
+
+
+
 /* ================= */
 /* KOLEKSI CSS BADGE */
 /* ================= */

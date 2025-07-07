@@ -738,3 +738,137 @@ body {
     color: var(--dark-green);
     font-weight: 600;
 }
+
+/* Produk Review */
+
+.rating-summary-card,
+.reviews-card {
+    background-color: #FEF7E5;
+    /* Light yellow background from image */
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid #EADDC8;
+    max-width: 700px;
+    /* Set a max-width for better viewing on desktop */
+    margin: 2rem auto;
+    /* Center the card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.rating-overall {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rating-overall .star-icon {
+    font-size: 2.5rem;
+    color: #F7B92A;
+    /* Gold color for the star */
+}
+
+.rating-overall .rating-score {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.rating-overall .rating-max {
+    font-size: 1.25rem;
+    color: #6c757d;
+    align-self: flex-end;
+    padding-bottom: 0.5rem;
+}
+
+.rating-satisfaction,
+.rating-count {
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.rating-breakdown {
+    font-size: 0.9rem;
+}
+
+.rating-breakdown .row {
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.rating-breakdown .star-label {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #6c757d;
+}
+
+.rating-breakdown .star-label .bi-star-fill {
+    color: #F7B92A;
+}
+
+.rating-breakdown .progress {
+    height: 8px;
+    background-color: #E9ECEF;
+    border-radius: 4px;
+}
+
+.rating-breakdown .progress-bar {
+    background-color: #1A4D2E;
+    /* Dark green from previous designs */
+}
+
+.rating-breakdown .rating-value {
+    color: #6c757d;
+    text-align: right;
+}
+
+/* Review Section Styles */
+.reviews-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+}
+
+.review-item {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.review-author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-stars .bi-star-fill {
+    color: #F7B92A;
+}
+
+.review-body {
+    font-size: 0.95rem;
+}
+
+.review-images img {
+    width: 80px;
+    height: 80px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.review-helpful-btn {
+    color: #6c757d;
+    border-color: #ced4da;
+}
+
+.review-helpful-btn:hover {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+}

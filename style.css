@@ -493,3 +493,248 @@ body {
     background: #1E3829 !important;
     opacity: 1;
 }
+
+/* ====================== */
+/* DETAIL PRODUK */
+/* ====================== */
+
+:root {
+    --dark-green: #1A4D2E;
+    --light-green-bg: #EAF2E8;
+}
+
+/* PRODUK BERANDA */
+.product-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.main-product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1rem;
+    background-color: #e9ecef;
+}
+
+.thumbnail-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+    background-color: #e9ecef;
+}
+
+.thumbnail-image:hover {
+    border-color: var(--dark-green);
+}
+
+.event-tag {
+    background-color: var(--dark-green);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.product-title {
+    font-weight: 700;
+    color: #212529;
+}
+
+.product-meta span,
+.product-meta a {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.price-display h2 {
+    color: #343a40;
+    font-weight: 700;
+}
+
+.original-price {
+    color: #6c757d;
+}
+
+.voucher-card {
+    background-color: var(--light-green-bg);
+    border: 1px solid var(--dark-green);
+    color: var(--dark-green);
+    border-radius: 0.75rem;
+}
+
+.voucher-percent {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.quantity-input {
+    max-width: 150px;
+}
+
+.quantity-input .form-control {
+    text-align: center;
+    border-left: none;
+    border-right: none;
+}
+
+.quantity-input .btn {
+    border-color: #ced4da;
+}
+
+.size-selector .btn {
+    min-width: 45px;
+}
+
+.subtotal-box {
+    border: 2px dashed #6c757d;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.btn-add-to-cart {
+    background-color: #fff;
+    border: 2px solid var(--dark-green);
+    color: var(--dark-green);
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-add-to-cart:hover {
+    background-color: var(--dark-green);
+    color: white;
+}
+
+.btn-buy-now {
+    background-color: var(--dark-green);
+    border: 2px solid var(--dark-green);
+    color: white;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-buy-now:hover {
+    opacity: 0.9;
+}
+
+.report-link {
+    color: var(--dark-green);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* PRODUK DETAIL */
+
+.product-nav .nav-link {
+    color: #6c757d;
+    font-weight: 500;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 2rem;
+}
+
+.product-nav .nav-link.active {
+    color: var(--dark-green);
+    font-weight: 600;
+    border-bottom-color: var(--dark-green);
+}
+
+.detail-row {
+    font-size: 0.95rem;
+}
+
+.detail-label {
+    color: #6c757d;
+}
+
+.detail-value {
+    font-weight: 600;
+}
+
+.detail-value a {
+    color: var(--dark-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.purchase-card {
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .purchase-section {
+        position: sticky;
+        top: 2rem;
+    }
+}
+
+.quantity-input {
+    max-width: 150px;
+}
+
+.quantity-input .form-control {
+    text-align: center;
+    border-left: none;
+    border-right: none;
+}
+
+.quantity-input .btn {
+    background-color: var(--dark-green);
+    color: white;
+    border-color: var(--dark-green);
+}
+
+.size-selector .btn {
+    min-width: 45px;
+}
+
+.subtotal-box {
+    border: 2px solid var(--dark-green);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+.btn-add-to-cart {
+    background-color: #fff;
+    border: 1px solid var(--dark-green);
+    color: var(--dark-green);
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-buy-now {
+    background-color: var(--dark-green);
+    border: 1px solid var(--dark-green);
+    color: white;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-buy-now:hover {
+    opacity: 0.9;
+}
+
+.btn-see-less {
+    color: var(--dark-green);
+    font-weight: 600;
+}

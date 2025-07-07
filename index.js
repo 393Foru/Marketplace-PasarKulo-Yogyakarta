@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Ambil tinggi sebenarnya dari navbar pertama
         const tinggiNavbarUtama = navbarUtama.offsetHeight;
 
-        // Atur properti CSS 'top' untuknavbar kedua
+        // Atur properti CSS 'top' untuk navbar kedua
         navbarKedua.style.top = tinggiNavbarUtama + 'px';
     }
 });
@@ -100,4 +100,3 @@ var produkSwiper = new Swiper("#ProdukSwiper", {
         }
     }
 });
-

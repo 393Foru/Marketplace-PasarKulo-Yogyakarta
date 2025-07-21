@@ -1,23 +1,3 @@
-// ============================
-// KOLEKSI JS NAVBAR
-// ============================
-
-// Navbar tumpuk 2
-document.addEventListener('DOMContentLoaded', function () {
-    // Ambil elemen navbar pertama dan kedua
-    const navbarUtama = document.getElementById('navbar-pertama');
-    const navbarKedua = document.getElementById('navbar-kedua');
-
-    // Pastikan kedua elemen ada
-    if (navbarUtama && navbarKedua) {
-        // Ambil tinggi sebenarnya dari navbar pertama
-        const tinggiNavbarUtama = navbarUtama.offsetHeight;
-
-        // Atur properti CSS 'top' untuk navbar kedua
-        navbarKedua.style.top = tinggiNavbarUtama + 'px';
-    }
-});
-
 // ==============================
 // KOLEKSI JS SWIPER
 // ==============================

@@ -1,0 +1,40 @@
+<template id="card-produk-template">
+    <div class="col-lg-4 col-md-6">
+        <div class="card-produk card rounded-4 w-100 h-100">
+            <img src="" class="card-produk-img-top card-img-top rounded-top-4" alt="Gambar Produk">
+            <div class="card-body d-flex flex-column flex-grow-1 w-100">
+                <!-- Kontainer untuk badge promo produk -->
+                <div class="promo-container d-flex gap-1 mb-2">
+                    <!-- Anda bisa menambahkan badge promo produk di sini jika ada -->
+                </div>
+                <div class="judul-produk text-start mb-0"></div>
+                <div class="d-flex align-items-center flex-grow-1 w-100">
+                    <div class="text-start w-100">
+                        <div class="gap-2">
+                            <p class="harga fw-bold card-title m-1"></p>
+                            <!-- Kontainer untuk info diskon -->
+                            <div class="info-diskon d-flex align-items-center mb-2 gap-1 flex-wrap">
+                                <span class="badge discount-badge"></span>
+                                <span class="text-muted text-decoration-line-through mb-0"></span>
+                            </div>
+                        </div>
+                        <!-- Kontainer untuk info rating dan penjualan -->
+                        <div class="info-penjualan d-flex align-items-center gap-1 flex-wrap">
+                            <div class="gap-0 d-flex align-items-center">
+                                <span class="text-warning rating-star"> &#9733;</span>
+                                <span class="text-muted rating-text"></span>
+                                <span class="separator mx-1">|</span>
+                                <span class="terjual-text"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-card flex-column text-start small text-muted d-flex w-100 mt-auto pt-2">
+                    <span class="teks-footer-card"></span>
+                    <hr class="my-0" style="border-top: 2px solid #cacaca;">
+                    <span class="teks-footer-card text-muted opacity-50"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

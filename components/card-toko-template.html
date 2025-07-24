@@ -1,0 +1,37 @@
+<template id="card-toko-template">
+    <div class="card-toko card card-hover rounded-4 w-100 mb-5">
+        <img src="" class="card-img-top img-top rounded-top-4" alt="Banner Toko">
+        <div class="card-body d-flex flex-column flex-grow-1 w-100">
+            <!-- Kontainer untuk badge promo -->
+            <div class="promo-container d-flex gap-1 mb-2">
+                <!-- Badge promo akan diisi oleh JavaScript -->
+            </div>
+            <div class="d-flex align-items-center flex-grow-1 w-100">
+                <div class="me-2 flex-shrink-0">
+                    <img src="" alt="Logo Toko" class="logo-toko img-fluid rounded-circle">
+                </div>
+                <div class="w-100">
+                    <h4 class="card-title mb-0 judul-toko w-75"></h4>
+                    <div class="teks-kategori d-flex align-items-center gap-1 flex-wrap flex-shrink-0">
+                        <p class="mb-0">Kategori</p>
+                        <div class="d-flex gap-1 flex-wrap flex-fill align-items-center">
+                            <span class="text-warning rating-stars">
+                                <!-- Bintang rating akan diisi oleh JavaScript -->
+                            </span>
+                            <span class="text-muted rating-text"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Kontainer untuk kartu produk -->
+            <div class="produk-container row g-3 mt-3">
+                <!-- Kartu-kartu produk akan dirender di sini -->
+            </div>
+            <div class="flex-column text-start small text-muted d-flex w-100 mt-3">
+                <span class="teks-footer-card"></span>
+                <hr class="my-0" style="border-top: 2px solid #cacaca;">
+                <span class="teks-footer-card text-muted opacity-50"></span>
+            </div>
+        </div>
+    </div>
+</template>

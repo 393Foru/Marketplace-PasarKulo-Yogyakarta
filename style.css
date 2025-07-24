@@ -28,7 +28,7 @@ body {
 /* ================== */
 
 .logo-navbar {
-    max-width: 200px;
+    max-width: 160px;
     height: auto;
     object-fit: cover;
 }
@@ -170,7 +170,18 @@ body {
 .btn-selanjutnya {
     color: #1E3829;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: thin;
+}
+
+#navbar-pertama .navbar-nav .nav-link.active,
+#navbar-pendukung .btn-selanjutnya.active {
+    color: #198754;
+    font-weight: bold;
+}
+
+#navbar-pendukung .btn-selanjutnya.active {
+    border-bottom: 2px solid #198754;
+    padding-bottom: 4px;
 }
 
 .btn-icon {
@@ -246,7 +257,7 @@ body {
 
 .card-kategori .img-bottom {
     width: 100%;
-    height: 100px;
+    height: 80px;
     object-fit: cover;
     margin: 0 auto;
     display: block;
@@ -411,11 +422,12 @@ body {
 }
 
 .banner-utama-1 img {
-    height: 600px;
+    height: 500px;
     width: 100%;
     object-fit: cover;
     margin: 0 auto;
     display: block;
+    filter: blur(1px);
 }
 
 .banner-utama-1 .carousel-item::before {
@@ -425,12 +437,13 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(30, 56, 41, 0.25);
+    background-color: rgba(30, 50, 56, 0.3);
     /* Lapisan hijau tua dengan opasitas 50% */
     z-index: 1;
 }
 
 .banner-utama-1 .carousel-caption {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
 
